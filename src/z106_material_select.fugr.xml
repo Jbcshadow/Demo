@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>RFC物料信息查询</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZ106_MATERIAL_SELECTTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZ106_MATERIAL_SELECT</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z106_MATERIAL_SELECT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>物料信息查询</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_MATERIAL</PARAMETER>
+       <TYP>MATNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>R_MAKTX</PARAMETER>
+       <TYP>MAKTX</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>R_MESSAGE</PARAMETER>
+       <TYP>MSGTX</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_MATERIAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>物料编号</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>R_MAKTX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>物料描述</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>R_MESSAGE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>用于 CAD 对话接口的信息行</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

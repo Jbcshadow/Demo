@@ -1,0 +1,3 @@
+FUNCTION-POOL Z106_MATERIAL_SELECT.         "MESSAGE-ID ..
+
+* INCLUDE LZ106_MATERIAL_SELECTD...          " Local class definition
